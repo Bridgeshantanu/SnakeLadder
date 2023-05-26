@@ -34,7 +34,15 @@
                 {
                     playerPosition = 0; 
                 }
+                if (playerPosition > 100)
+                {
+                    playerPosition -= diceNumber; 
+                }
+
+                Console.WriteLine("Current position: " + playerPosition);
+                Console.WriteLine();
             }
+        
         }
     }
 }
