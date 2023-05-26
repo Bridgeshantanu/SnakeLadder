@@ -14,7 +14,7 @@
                 diceRolls++;
                 Console.WriteLine("Dice rolled: " + diceNumber);
 
-                int option = random.Next(0, 3); 
+                int option = random.Next(0, 3);
 
                 switch (option)
                 {
@@ -30,6 +30,11 @@
                         playerPosition -= diceNumber;
                         break;
                 }
+                if (playerPosition < 0)
+                {
+                    playerPosition = 0; 
+                }
             }
+        }
     }
 }
